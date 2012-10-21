@@ -1,0 +1,10 @@
+<h1>Theatre Listings</h1>
+<%= flash[:notice] %>
+<div>
+	<% @theatres.each do |theatre| %>
+		<%= theatre %>
+	<% end %> 
+</div>
+<div>
+	<%= link_to 'Back to Search Page', searches_index_path %>
+</div>
