@@ -15,7 +15,7 @@ module NavigationHelpers
 
     when /^the home\s?page$/
       '/'
-
+      
     when /^the Theatre Database home page/
       '/searches/index'
       

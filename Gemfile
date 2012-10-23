@@ -8,6 +8,10 @@ gem 'rails', '3.2.8'
 gem 'sqlite3'
 
 gem 'google_movies47'
+gem 'mapquest_directions'
+gem 'bootstrap-sass', '2.0.4'
+gem 'imdb'
+gem 'simple_youtube'
 
 group :test, :development do
 	gem 'capybara'

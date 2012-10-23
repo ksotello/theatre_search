@@ -1,0 +1,21 @@
+<h1>Movie listings for</h1>
+<h1><%= flash[:notice] %></h1>
+
+<p>Theatre Rating</p>
+
+<h2>Movie Listings</h2>
+<div>
+<% @locations.each do |theatre| %>
+	<% if flash[:notice] == theatre[1].fetch(:name) %>
+		<%= theatre[1].fetch(:movies) %>
+	<% end %>
+<% end %>
+</div>
+
+<p>Get Directions</p>
+<%= form_tag searches_result_path, :method => 'get' do %>
+  	Driving from:
+  	<%= text_field_tag :address, params[:address] %>
+  	<%= submit_tag 'Get Directions', :name => nil %>
+<% end %>
+<%= link_to "Back to Movie Listings", searches_result_path %>

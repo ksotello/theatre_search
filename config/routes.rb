@@ -3,6 +3,9 @@ TheatreSearch::Application.routes.draw do
 
   get "searches/result"
 
+  get "searches/help"
+
+  get "searches/info"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

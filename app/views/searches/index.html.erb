@@ -1,8 +1,8 @@
-<h1>Theatre Database</h1>
-<p>Search for a Movie Theatre</p>
-<div>
+<div class="center hero-unit">
+	<h1>Theatre Database</h1>
+	<p>Search for a Movie Theatre</p>
 	<%= form_tag searches_result_path, :method => 'get' do %>
-  		<label>City and State</label>
+  		City and State:
   		<%= text_field_tag :search, params[:search] %>
   		<%= submit_tag 'Search for Theatre', :name => nil %>
   	<% end %>

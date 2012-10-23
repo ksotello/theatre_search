@@ -1,4 +1,4 @@
-Feature: Use can search for a movie theatre by both City and State
+Feature: User can search for a movie theatre by both City and State
 
 As a movie goer ininterested in finding a local theatre
 So that I can search a theatre database in order to find a local theatre
