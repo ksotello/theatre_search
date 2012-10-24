@@ -7,6 +7,12 @@ and to display movie listings. App also aims to give the user instant
 access to IMDB information about movie titles and to also provide
 movie trailers.
 
+== Functionality
+
+-Search movie theatres
+-Show a listing of all movies at at a perticular theatre
+-Show movie time and IMDB info
+
 
 For more information about this application please contact
 Kyle Sotello @ ksotello@uncc.edu
