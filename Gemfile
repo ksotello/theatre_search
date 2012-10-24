@@ -12,6 +12,7 @@ gem 'mapquest_directions'
 gem 'bootstrap-sass', '2.0.4'
 gem 'imdb'
 gem 'simple_youtube'
+gem 'rake'
 
 group :test, :development do
 	gem 'capybara'
