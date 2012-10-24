@@ -1,5 +1,7 @@
 == Theatre Search Application
 
+{<img src="https://secure.travis-ci.org/ksotello/theatre_search.png" alt="Build Status" />}[http://travis-ci.org/ksotello/theatre_search]
+
 Application used to make it easier to look up local movie theatres
 and to display movie listings. App also aims to give the user instant
 access to IMDB information about movie titles and to also provide
