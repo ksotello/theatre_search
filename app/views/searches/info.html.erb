@@ -7,12 +7,16 @@
 <div>
 <% @locations.each do |theatre| %>
 	<% if flash[:notice] == theatre[1].fetch(:name) %>
-		<%= theatre[1].fetch(:movies) %>
+		<% theatre[1].fetch(:movies).split()[0].each do |name| %>
+			<%= name.fetch(:name) %>
+			<%= link_to " Show Times", '#' %>
+			<%= link_to " IMDB Info", '#' %>
+			<%= link_to " Movie Trailer", '#' %><br>
+		<% end %>
 	<% end %>
 <% end %>
 </div>
-
-<p>Get Directions</p>
+<h3>Get Directions</h3>
 <%= form_tag searches_result_path, :method => 'get' do %>
   	Driving from:
   	<%= text_field_tag :address, params[:address] %>

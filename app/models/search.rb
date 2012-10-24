@@ -1,3 +1,14 @@
+# == Schema Information
+#
+# Table name: searches
+#
+#  id         :integer          not null, primary key
+#  city       :string(255)
+#  state      :string(255)
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
+
 class Search < ActiveRecord::Base
   attr_accessible :city, :listings, :name, :state
   def self.find_theatre(search)
@@ -10,10 +21,10 @@ class Search < ActiveRecord::Base
   end
 
   def self.theatres
-    @theatres = @listings.theaters.to_a
+    @theatres = @listings.theaters
   end
 
   def self.movies
-    @movies = @listings.movies.to_a
+    @movies = @listings.movies
   end
 end
