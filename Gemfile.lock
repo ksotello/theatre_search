@@ -187,6 +187,7 @@ DEPENDENCIES
   launchy
   mapquest_directions
   rails (= 3.2.8)
+  rake
   sass-rails (~> 3.2.3)
   simple_youtube
   sqlite3
