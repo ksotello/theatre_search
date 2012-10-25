@@ -14,4 +14,7 @@ class SearchesController < ApplicationController
     @trailer = Trailer.retrieve_movie_trailer(params[:name])
     @directions = MapQuest.get_directions('1500 Beacon Ridge Rd Apt 1006 Charlotte, NC 28210', '916 North Market Street, Troy, OH')
   end
+
+  def movie_info
+  end
 end
