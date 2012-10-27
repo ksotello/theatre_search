@@ -8,10 +8,8 @@
 <% @locations.each do |theatre| %>
 	<% if flash[:notice] == theatre[1].fetch(:name) %>
 		<% theatre[1].fetch(:movies).split()[0].each do |name| %>
-			<%= name.fetch(:name) %>
-			<%= link_to " Show Times", '#' %>
-			<%= link_to " IMDB Info", '#' %>
-			<%= link_to " Movie Trailer", '#' %><br>  
+			<%= link_to name.fetch(:name), searches_movie_info_path(:name => name.fetch(:name)) %>
+			<br>
 		<% end %>
 	<% end %>
 <% end %>

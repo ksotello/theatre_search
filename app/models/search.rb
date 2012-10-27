@@ -11,6 +11,7 @@
 
 class Search < ActiveRecord::Base
   attr_accessible :city, :listings, :name, :state
+
   def self.find_theatre(search)
   	if search
   		@location = search.split(",")

@@ -1,0 +1,29 @@
+<h1>Movie info for</h1>
+<h1><%= flash[:notice] %></h1>
+
+<div>
+	<% @locations.each do |theatre| %>
+		<% theatre[1].fetch(:movies).each do |movie| %>
+			<% if flash[:notice] == movie.fetch(:name) %>
+				Language: 
+				<% if movie.fetch(:language) == nil %>
+					English
+				<% end %>
+				<% if movie.fetch(:language) != nil %>
+					<%= movie.fetch(:language) %>
+				<% end %><br>
+					Show Times: 
+				<%= movie.fetch(:times) %><br>
+			<% end %>
+		<% end %>
+	<% end %>
+</div>
+<div>
+	<p>Movie Trailer</p>
+	<iframe width="560" height="315" src="<%= @trailer %>" frameborder="0" allowfullscreen></iframe>
+</div>
+<div>
+	<p>IMDB Details</p>
+	<% @imdb.plot %>
+</div>
+<%= link_to "Back to Movie Listings", searches_info_path %>

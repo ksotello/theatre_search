@@ -11,8 +11,11 @@ gem 'google_movies47'
 gem 'mapquest_directions'
 gem 'bootstrap-sass', '2.0.4'
 gem 'imdb'
+gem 'myimdb', :git => 'git://github.com/gauravs/myimdb.git'
 gem 'simple_youtube'
 gem 'rake'
+gem 'httparty'
+gem 'nokogiri'
 
 group :test, :development do
 	gem 'capybara'
