@@ -1,8 +1,8 @@
 <h1>Theatre Listings for <%= flash[:notice] %></h1>
 <div>
 	<% @locations.each do |theatre| %>
-		<b>Theatre Name: </b><%= link_to theatre[1].fetch(:name), searches_info_path(:name => theatre[1].fetch(:name))  %><br>
-		<b>Address: </b> <%= theatre[1].fetch(:info) %> <br>
+		<h2><%= link_to theatre[1].fetch(:name), searches_info_path(:name => theatre[1].fetch(:name))  %></h2>
+		<h2><%= theatre[1].fetch(:info) %></h2>
 	<% end %>
 </div>
 <div>
